@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/id_rl_cart_is_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/id_rl_cart_is_empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/id_rl_cart_is_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/id_rl_cart_is_empty_image"
+            android:layout_marginTop="10dp"
+            android:text="购物车为空"/>
+    </RelativeLayout>
+
+    <!--extends  ListView  继承
+
+    主要由组与子元素组成。
+    所以我们要分别对组元素以及子元素进行配置及操作
+
+    -->
+    <ExpandableListView
+        android:id="@+id/id_elv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#ebebeb"
+        android:groupIndicator="@null"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:visibility="visible"
+        >
+    </ExpandableListView>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/foot_layout"
+        />
+</RelativeLayout>

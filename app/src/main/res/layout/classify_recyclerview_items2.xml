@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/classify_recyclerview_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/jsbundles_jdreactintlbrand_images_brand_enter_afterenter_bg"/>
+</LinearLayout>
